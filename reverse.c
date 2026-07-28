@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     char *pOutputName = NULL;
     LINE *pFirst = NULL;
 
-    // Too many arguements
+    // Too many arguments
     if (argc > 3) {
         fprintf(stderr, "usage: reverse <input> <output>\n");
         exit(1);
@@ -69,7 +69,7 @@ LINE *readLines(char *pFileName, LINE *pFirst) {
     free(pLine);
     pLine = NULL;
 
-    if(pFile != stdin) {
+    if(pFile != stdout) {
         fclose(pFile);
     }
 
